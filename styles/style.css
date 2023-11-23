@@ -36,3 +36,71 @@ ul,
 ol {
   list-style: none;
 }
+
+
+.video {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  inline-size: 100%;
+  margin: 0 30px;
+  gap: 30px;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.content__list {
+  position: relative;
+  height: 300px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-self: baseline;
+}
+
+.content__details {
+  width: 399px;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  justify-content: start;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.result__video-container {
+  width: 711px;
+  height: 386px;
+  padding-bottom: 16px;
+}
+
+.result__video {
+  height: inherit;
+  width: inherit;
+  object-fit: cover;
+}
+
+.content__video-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+}
+

@@ -13,7 +13,7 @@ html {
   align-items: center;
   inline-size: 1200px;
   block-size: 100%;
-  margin: auto;
+  margin: 0 auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
@@ -166,6 +166,8 @@ ol {
   display: flex;
   width: fit-content;
   gap: 5px;
+  cursor: pointer;
+  
 }
 
 .search-form__fieldset {
@@ -191,7 +193,6 @@ ol {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   appearance: none;
-  cursor: pointer;
 }
 
 .button {
@@ -207,7 +208,13 @@ ol {
   font-family: Fira Sans Condensed;
   font-size: 18px;
   font-weight: 700;
+  cursor: pointer;
   
+}
+
+.button:hover {
+  text-decoration: underline;
+
 }
 
 .search-form__submit-button {
@@ -220,9 +227,12 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
+  display: flex;
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
+  justify-content: center;
+  align-items: center;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
@@ -231,5 +241,9 @@ ol {
   width: 15px;
   height: 15px;
   background-color: white;
+}
+
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline;
 }
 /*Step 6*/

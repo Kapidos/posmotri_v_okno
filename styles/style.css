@@ -9,6 +9,8 @@ html {
 }
 
 .page {
+  display: flex;
+  align-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -49,21 +51,18 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
-} 
+}
 
 .content {
+  margin: 0 auto;
   display: flex;
-  align-items: center;
-  inline-size: 100%;
-  margin: 0 30px;
+  align-items: end;
   gap: 30px;
 }
 
 .search-form {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-evenly;
+  gap: 42px;
 }
 
 .content__list {
@@ -94,7 +93,6 @@ ol {
   position: relative;
   width: 711px;
   height: 386px;
-  padding-bottom: 16px;
 }
 
 .result__video {
@@ -128,6 +126,8 @@ ol {
 }
 
 .search-form__fieldset-title {
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .content__video-card-title {
@@ -150,11 +150,86 @@ ol {
 }
 
 .content__video-card-description {
-  color: #FFF;
-font-family: Fira Sans Condensed ,sans-serif;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 16.2px; /* 90% */
+  color: #fff;
+  font-family: Fira Sans Condensed, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.2px; /* 90% */
+}
+
+.fieldset {
+  border: none;
+}
+
+.search-form__label {
+  display: flex;
+  width: fit-content;
+  gap: 5px;
+}
+
+.search-form__fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  gap: 11px;
+  
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+}
+
+.search-form__textfield {
+  color: rgba(255, 255, 255, 0.70);
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  width: 225px;
+  background: none;
+  border: none;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  appearance: none;
+  cursor: pointer;
+}
+
+.button {
+  display: flex;
+  color: #fff;
+  height: 34px;
+  justify-content: center;
+  padding: 6px 0;
+  background: none;
+  flex-shrink: 0;
+  border: 1px solid #fff;
+  cursor: pointer;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-weight: 700;
+  
+}
+
+.search-form__submit-button {
+  width: 194px;
+  align-self: end;
+}
+
+.more-button {
+  width: 100%;
+}
+
+.search-form__pseudo-checkbox {
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: white;
 }
 /*Step 5*/
